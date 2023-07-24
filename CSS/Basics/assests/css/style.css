@@ -39,3 +39,61 @@
 .cssText>p{
     text-indent: 100px;
 }
+
+/* p9.html */
+.navBar{
+    background-color: slategray;
+}
+.navBar>ul{
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+    float: right;
+}
+.navBar>ul>li{
+    display: inline-block;
+    padding: 20px;
+}
+.navBar>ul>li:hover{
+    background-color: azure;
+}
+.navBar>ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+.navBar>ul>li:hover{
+    color: slategray;
+}
+.navBar>img{
+    height: 54px;
+}
+/* p10.html */
+.list-marker-position>ol>li{
+    background-color: teal;
+    padding: 20px;
+    margin-bottom: 10px;
+    list-style-position: inside;
+}
+.list-marker-position>ol>lo::marker{
+    color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+}
+/* p11.html*/
+.list-icon>ul>li{
+    list-style-image: url(../images/maps.png);
+}
+/*p12.html*/
+.list-shorthand>ul>li{
+    background-color: teal;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* list-style-type:none;
+    list-style-position: inside;
+    list-style-image: url(../images/education.png); */
+    list-style: none inside url(../images/maps.png);
+}
+/* p13.html */
+.empty-cell-table{
+    empty-cells: hide;
+}
