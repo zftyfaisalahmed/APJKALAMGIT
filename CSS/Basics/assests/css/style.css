@@ -97,3 +97,92 @@
 .empty-cell-table{
     empty-cells: hide;
 }
+/* p14.html */
+.odd-even-table, .odd-even-table th, .odd-even-table td{
+    border: 1px solid #000;
+    padding: 20px;
+    border-collapse: collapse;
+    color: white;
+}
+.odd-even-table{
+    background-color: aqua;
+}
+.odd-even-table tr:nth-child(even){
+    background-color: rgb(4, 68,68);
+}
+.odd-even-table tr:nth-child(odd){
+    background-color: teal;
+}
+.odd-even-table tr:hover{
+    background-color: yellow;
+}
+.odd-even-table th{
+    background-color: blue;
+}
+.odd-even-table>caption{
+    color: grey;
+    font-weight: bold;
+    caption-side: bottom;
+}
+.odd-even-table td{
+    height: 100px;
+    vertical-align: bottom;
+}
+/* p15.html */
+.layout-table, .layout-table th, .layout-table td{
+    border: 2px solid grey;
+    border-collapse: collapse;
+    padding: 20px;
+}
+.layout-table{
+    width: 20%;
+    table-layout: fixed;
+}
+.layout-table td, .layout-table th{
+    overflow: scroll;
+}
+
+/* p16.html */
+*{
+    padding: 0%;
+    margin: 0%;
+}
+header>nav>ul{
+    list-style-type: none;
+    float: right;
+}
+header>nav>img{
+    height: 64px;
+}
+header>nav>ul>li{
+    display: inline-block;
+    padding: 25px;
+    background-color: grey;
+}
+header>nav>ul>li:hover a{
+    background-color: grey;
+    color: white;
+}
+/* p17.html */
+.banner1{
+    background-color: bisque;
+}
+.bannerCommonClass{
+    color: grey;
+    padding: 30px;
+    height: 60vh;
+    text-align: center;
+}
+.bannerCommonClass>h1{
+    font-size: 50px;
+}
+.bannerCommonClass>h1:hover{
+    color: black;
+}
+/* p18.html*/
+.banner2{
+    background-image: url(../images/maps.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
