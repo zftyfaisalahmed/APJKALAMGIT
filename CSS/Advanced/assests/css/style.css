@@ -15,10 +15,10 @@
 
 /* COMMON CLASS */
 .common{
-    background-color: #ddd;
+    background-color: grey;
     padding: 30px;
     margin: 30px;
-    border: 3px solid #ccc;
+    border: 3px solid black;
 }
 .cssOutline{
     outline: 3px solid #000;
@@ -67,3 +67,97 @@
 .cssUnits>h3:nth-child(7){
     font-size: 12px;   /*pixel*/
 }  
+
+/* p6 */
+
+/* p7 */
+.cssWordWarp>p{
+    background-color: grey;
+    padding: 20px;
+    width: 300px;
+    word-wrap: break-word;
+}
+/* p8 */
+
+/* p9 */
+.cssOffsetOutline{
+    outline: 3px solid #000;
+    outline-offset: 10  px;
+}
+/* p10 */
+.cssColumnCount{
+    line-height: 2;
+    text-align: justify;
+}
+.cssColumnCount>div{
+    /* column-count: 3; */
+    column-gap: 50px;
+    column-rule: 2px solid black;
+    column-width: 200px;
+}
+/* p11 */
+.cssOpacity>p{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    opacity: 0.2;
+}
+.cssOpacity>div{
+    background-color: rgba(12, 128, 128, 0.4);
+    color: rgba(128, 1, 255, 0.5);
+    padding: 20px;
+}
+/* p12 */
+/* Exp-1 */
+.cssAttribute>h1{
+    color: brown;
+}
+.cssAttribute>p{
+    color: aqua;
+}
+.cssAttribute>[title]{
+    background-color: #000;
+}
+.cssAttribute>p[title]{
+    padding: 20px;
+}
+.cssAttribute>h1[title]{
+    font-size: italic;
+}
+/* Exp-2 */
+.cssAttribute>p>abbr[id]{
+    background-color: white;
+    color: black;
+}
+/* Exp-3 */
+.cssAttribute>form>[type]{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 20px;
+}
+.cssAttribute>form>[type]{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.cssAttribute>form>[type="submit"]{
+    background-color: lightblue;
+    border: 2px solid red;
+}
+/* p13 */
+.cssPosition>h1:first-child, .cssPosition>div>h1:first-child{
+    background-color: orange;
+}
+.cssPosition>h1:nth-child(2), .cssPosition>div>h1:nth-child(2){
+    background-color: white;
+}
+.cssPosition>h1:nth-child(3), .cssPosition>div>h1:nth-child(3){
+    background-color: green;
+}
+.cssPosition h1{
+    padding: 20px;
+    color: #000;
+}
+.cssPosition>div{
+    border: 2px solid #000;
+    padding: 20px;
+}
