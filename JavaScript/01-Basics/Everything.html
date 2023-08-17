@@ -11,21 +11,61 @@
     </center>
     <hr>
 
-    <form onsubmit="codeHandler(event)">
-    <div>
-        <label for="op">Choose An Operation</label>
-        <select name="op" id="">
-            <option value="add">Addition</option>
-            <option value="sub">Subtraction</option>
-            <option value="mul">Multiplication</option>
-            <option value="div">Division</option>
-            <option value="mod">Modulus</option>
-        </select>
-    </div><br>
-    <div>
-        <label for="inpa">Enter Input a</label>
-        
-    </div>
-    </form>
-</body>
+        <script>
+            function Calc(){
+                var val1 = document.getElementById("val1").value;
+                var val2 = document.getElementById("val2").value;
+                var opt = document.getElementById("opt").value;
+                
+                var ans = eval(val1 + opt + val2);
+                document.getElementById("ans").value = ans;
+            }
+        </script>
+
+   
+    
+        <div>
+            <div>
+                
+                <div>
+                    <label for="desc">Enter input a :</label> 
+                
+                    <input type="number" class="form-control" id="val1" value="" required>
+                </div>
+            </div>
+            <br />
+            <div>
+                <div>
+                    <label for="desc">Enter input b :</label> 
+                
+                    <input type="number" class="form-control" id="val2" value="" required>
+                </div>
+                <br>
+                
+                <div>
+                    <select id="opt">
+                        <option value="+">Addition</option>
+                        <option value="-">Subtraction</option>
+                        <option value="*">Multiplication</option>
+                        <option value="/">Division</option>
+                        <option value="%">Modulus</option>
+                    </select>
+                </div>
+    
+            </div>
+            <br />
+            <div>
+                <div>
+                    <label for="desc">Answer:</label> 
+               
+                    <input type="text" class="form-control" id="ans" readonly>
+                </div><br>
+                <div>
+                    <button type="submit" name="submit" onClick="Calc()">Submit</button>
+                </div>
+            </div>
+        </div>
+    
+   
+    </body>
 </html>
